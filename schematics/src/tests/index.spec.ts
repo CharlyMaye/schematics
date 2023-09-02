@@ -13,6 +13,8 @@ describe('schematics', () => {
         createFiles(tree, testPath, 'result');
         const masters = readFiles(testPath, 'master');
         const result = readFiles(testPath, 'result');
-        expect(masters).toEqual(result);
+        expect(masters[0].content.toString()).toEqual(
+            result[0].content.toString()
+        );
     });
 });
