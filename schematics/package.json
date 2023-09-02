@@ -4,7 +4,7 @@
     "description": "A blank schematics",
     "scripts": {
         "clean": "rimraf dist/",
-        "copy-files": "copyfiles -u 1 src/**/*.json src/**/files/**/* src/**/files/**/.vscode/* src/**/files/**/.* dist/",
+        "copy-files": "copyfiles -u 1 src/**/*.json src/**/files/**/* src/**/files/**/.*/* src/**/files/**/.* dist/",
         "build": "tsc -p tsconfig.json",
         "build:full": "npm run clean && npm run build && npm run copy-files",
         "build:test": "npm run build && npm run copy-files",

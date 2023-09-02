@@ -51,7 +51,7 @@ export function readFiles(
     const pathToRead = join(testPath, inputType);
     const files = getFiles(pathToRead);
     return files.map((file) => ({
-        path: file,
-        content: readFileSync(file, { encoding: 'utf8' }),
+        path: file.replace(pathToRead, ''),
+        content: readFileSync(file),
     }));
 }
