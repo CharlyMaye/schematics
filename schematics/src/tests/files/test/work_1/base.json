@@ -1,0 +1,11 @@
+{
+    "type": "workspace",
+    "options": { "name": "test", "version": "1.0.0" },
+    "children": [
+        {
+            "type": "application",
+            "options": { "name": "test" },
+            "children": []
+        }
+    ]
+}
