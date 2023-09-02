@@ -5,10 +5,10 @@ import * as path from 'path';
 const collectionPath = path.join(__dirname, '../collection.json');
 
 describe('schematics', () => {
-  it('works', async () => {
-    const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = await runner.runSchematic('schematics', {}, Tree.empty());
+    it('works', async () => {
+        const runner = new SchematicTestRunner('schematics', collectionPath);
+        const tree = await runner.runSchematic('schematics', {}, Tree.empty());
 
-    expect(tree.files).toEqual([]);
-  });
+        expect(tree.files).toEqual([]);
+    });
 });
